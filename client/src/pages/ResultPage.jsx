@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { FaBriefcase, FaChartLine, FaCheckCircle, FaExclamationTriangle, FaRedo } from 'react-icons/fa';
+import { FaBriefcase, FaChartLine, FaRedo } from 'react-icons/fa';
 
 import { useState, useEffect } from 'react';
 
