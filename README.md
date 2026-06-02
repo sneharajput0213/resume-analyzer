@@ -2,13 +2,13 @@
 
 A premium, state-of-the-art AI-powered platform designed to revolutionize the recruitment and job-seeking experience. Built with a stunning **Glassmorphism UI**, **Dark/Light Mode** support, and powered by **Groq Llama 3 AI**.
 
-Developed with ❤️ by **[Ashish Jha](https://github.com/ashishjha1304)** · © 2026
+Developed with ❤️ by **[Sneha Rajput](https://github.com/sneharajput0213)** · © 2026
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 [Frontend on Vercel](https://ai-cv-analysis-platform.vercel.app/)
+🔗 [Frontend on Vercel]()
 
 ---
 
@@ -59,7 +59,7 @@ Developed with ❤️ by **[Ashish Jha](https://github.com/ashishjha1304)** · �
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/ashishjha1304/ai-cv-analysis.git
+git clone https://github.com/sneharajput0213/resume-analyzer.git
 cd ai-cv-analysis
 ```
 
@@ -137,9 +137,9 @@ ai-cv-analysis/
 
 ## 👤 Author
 
-**Ashish Jha**
-- **GitHub**: [@ashishjha1304](https://github.com/ashishjha1304)
-- **LinkedIn**: [Ashish Jha](https://linkedin.com/in/ashishjha1304)
+**Sneha Rajput**
+- **GitHub**: 
+- **LinkedIn**: 
 
 ---
 
