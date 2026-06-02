@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ── */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #B08D77; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9E7B64; }
+
+/* ── Gradient text animation ── */
+.gradient-text {
+  color: #B08D77;
+  -webkit-text-fill-color: currentColor;
+  background-clip: unset;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ── Glow orb ── */
+.orb {
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  position: absolute;
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite;
+}
+
+.orb-purple { background: #D8C3B5; }
+.orb-blue   { background: #FBF7F5; }
+.orb-cyan   { background: #B08D77; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50%       { transform: translateY(-30px) scale(1.05); }
+}
+
+/* ── Card glass ── */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(232, 226, 220, 0.6);
+}
+
+.dark .glass {
+  background: rgba(15, 15, 35, 0.7);
+  border: 1px solid rgba(176,141,119,0.12);
+}
+
+/* ── Shine button ── */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: rgba(255,255,255,0.14);
+  transform: skewX(-25deg);
+  transition: left 0.6s ease;
+}
+.btn-shine:hover::after { left: 125%; }
+
+/* ── Slide up animation ── */
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out both;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Stagger delays ── */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* ── Stat counter ── */
+.stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ── Feature card hover ── */
+.feature-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* ── Pulsing ring ── */
+@keyframes ring-pulse {
+  0%   { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+.ring-pulse::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  animation: ring-pulse 2s ease-out infinite;
+}
+
+/* ── Theme toggle ── */
+.theme-toggle {
+  transition: all 0.3s ease;
+}
+.theme-toggle:hover { transform: rotate(20deg) scale(1.1); }
+
+/* ── Upload dropzone ── */
+.dropzone-active {
+  border-color: #B08D77 !important;
+  background: rgba(176,141,119,0.06) !important;
+  transform: scale(1.01);
+}
+
+/* ── Progress bar ── */
+.progress-bar {
+  background: #B08D77;
+  border-radius: 999px;
+  height: 100%;
+}
+@keyframes progress-slide {
+  0%   { background-position: 0% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Scan animation for loader ── */
+@keyframes scan {
+  0% { transform: translateY(-20px); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(150px); opacity: 0; }
+}
