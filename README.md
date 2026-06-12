@@ -8,7 +8,7 @@ Developed with ❤️ by **[Sneha Rajput](https://github.com/sneharajput0213)** 
 
 ## 🚀 Live Demo
 
-🔗 [Frontend on Vercel]()
+🔗 [Frontend on Vercel](https://resume-analyzer-app-rho.vercel.app/)
 
 ---
 
@@ -138,8 +138,8 @@ ai-cv-analysis/
 ## 👤 Author
 
 **Sneha Rajput**
-- **GitHub**: 
-- **LinkedIn**: 
+- **GitHub**: https://github.com/sneharajput0213
+- **LinkedIn**: https://www.linkedin.com/in/sneha-rajput2/
 
 ---
 
